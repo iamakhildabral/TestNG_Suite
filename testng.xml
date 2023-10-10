@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="PriorAndSevereTest">
+    <!-- Setting parameter before test , can be done for class and suite too-->
+    <parameter name="browser" value="FireFox"></parameter>
+    <parameter name="url" value="https://twitter.com/"></parameter>
+    <test name="parameter">
         <classes>
-            <class name="PriorAndSevereTest"/>
+            <class name="ParameterTest"/>
         </classes>
     </test>
 </suite>
